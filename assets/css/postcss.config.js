@@ -18,7 +18,7 @@ module.exports = {
         extractor: TailwindExtractor,
         extensions: ['html']
       }],
-      whitelistPatterns: ['class1', 'class2']
+      whitelist: ['class1', 'class2']
     }),
     require('autoprefixer')({
       grid: true,
