@@ -371,5 +371,17 @@ html {
 
 .bud {
   color: red;
-  transition: width 2s;
+}
+
+.my-2 {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+@media (min-width: 576px) {
+
+  .sm\:my-1 {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+  }
 }
