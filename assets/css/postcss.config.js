@@ -11,14 +11,14 @@ module.exports = {
       path: ["assets/css"],
     }), 
     require('tailwindcss')('./assets/css/tailwind.js'),
-    
     require('@fullhuman/postcss-purgecss')({
       content: ['layouts/*.html'],
       extractors: [
       {
         extractor: TailwindExtractor,
         extensions: ['html']
-      }]
+      }],
+      whitelistPatterns: ['class1', 'class2']
     }),
     require('autoprefixer')({
       grid: true,
