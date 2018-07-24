@@ -1,0 +1,11 @@
+<html>
+  <head>
+    {{ $style := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/postcss.config.js")  | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+  </head>
+  <body>
+    <div class="bud">
+      some content here
+    </div>  
+  </body>
+</html>

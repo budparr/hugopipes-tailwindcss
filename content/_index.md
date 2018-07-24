@@ -1,0 +1,3 @@
+---
+title: Home page
+---

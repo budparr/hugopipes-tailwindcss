@@ -1,0 +1,20 @@
+{
+  "name": "HugoPipes-tailwindcss",
+  "version": "2.0.0",
+  "description": "Starter files for a Hugo project",
+  "main": "index.js",
+  "repository": "https://github.com/budparr/hugopipes-tailwindcss",
+  "author": "budparr <budparr@gmail.com>",
+  "license": "MIT",
+  "scripts": {    
+    "start": "hugo"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.0.1",
+    "autoprefixer": "^9.0.1",
+    "postcss": "^7.0.1",
+    "postcss-cli": "^6.0.0",
+    "postcss-import": "^11.0.0",
+    "tailwindcss": "^0.6.4"
+  }
+}
