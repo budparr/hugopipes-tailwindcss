@@ -1,11 +1,6 @@
-<html>
-  <head>
-    {{ $style := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/postcss.config.js")  | resources.Fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
-  </head>
-  <body>
-    <div class="bud sm:my-1 my-2">
-      some content here
-    </div>  
-  </body>
-</html>
+{{ define "main" }}
+<div class="bud sm:my-1 my-2 p-1">
+  some content here
+</div>  
+
+{{ end }}
