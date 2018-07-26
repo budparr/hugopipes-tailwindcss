@@ -12,4 +12,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Added
 
-- Add a simple base case.
+- Add a simple base case
+
+## [0.02]- 2018-07-26 (@budparr)
+
+### Changed
+ 
+ - Separated contents of index.html into a baseof template, using blocks in index
+ - Use [method aliases](https://gohugo.io/hugo-pipes/introduction/#method-aliases) for simplicity
