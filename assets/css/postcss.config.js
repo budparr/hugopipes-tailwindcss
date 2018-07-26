@@ -1,12 +1,11 @@
-
 class TailwindExtractor {
 	static extract(content) {
 		return content.match(/[A-z0-9-:\/]+/g)
 	}
 }
 
-module.exports = {  
-  plugins: [
+module.exports = {    
+  plugins: [        
     require('postcss-import')({
       path: ["assets/css"],
     }), 
@@ -17,9 +16,10 @@ module.exports = {
       {
         extractor: TailwindExtractor,
         extensions: ['html']
-      }],
+      }], 
+      fontFace: true,
       whitelist: ['class1', 'class2']
-    }),
+    }),    
     require('autoprefixer')({
       grid: true,
       browsers: ['>1%']
