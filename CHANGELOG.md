@@ -20,3 +20,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
  
  - Separated contents of index.html into a baseof template, using blocks in index
  - Use [method aliases](https://gohugo.io/hugo-pipes/introduction/#method-aliases) for simplicity
+
+## [0.03]- 2018-07-26 (@budparr)
+
+### Changed
+
+- Add proper glob pattern
