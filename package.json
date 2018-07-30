@@ -7,7 +7,7 @@
   "author": "budparr <budparr@gmail.com>",
   "license": "MIT",
   "scripts": {    
-    "start": "hugo"
+    "start": "hugo --gc"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^1.0.1",
