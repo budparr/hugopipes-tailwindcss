@@ -17,7 +17,7 @@ module.exports = {
         extractor: TailwindExtractor,
         extensions: ['html']
       }], 
-      fontFace: true,
+      fontFace: false,
       whitelist: ['class1', 'class2']
     }),    
     require('autoprefixer')({
