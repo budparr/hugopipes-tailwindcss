@@ -9,7 +9,7 @@ module.exports = {
     require('postcss-import')({
       path: ["assets/css"],
     }), 
-    require('tailwindcss')('./assets/css/tailwind.js'),
+    require('tailwindcss')('./assets/css/tailwind.config.js'),    
     require('@fullhuman/postcss-purgecss')({
       content: ['layouts/**/*.html'],
       extractors: [
@@ -22,7 +22,7 @@ module.exports = {
     }),    
     require('autoprefixer')({
       grid: true,
-      browsers: ['>1%']
+      overrideBrowserslist: ['>1%']
     }),    
   ]
 }
