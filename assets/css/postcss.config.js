@@ -11,11 +11,15 @@ module.exports = {
     }), 
     require('tailwindcss')('./assets/css/tailwind.config.js'),    
     require('@fullhuman/postcss-purgecss')({
-      content: ['layouts/**/*.html'],
+      content: ['layouts/**/*.html'
+	        'content/**/*.md',
+	        'assets/css/site.css'],
       extractors: [
       {
         extractor: TailwindExtractor,
-        extensions: ['html']
+        extensions: ['html',
+		     'md',
+		     'css']
       }], 
       fontFace: false,
       whitelist: ['class1', 'class2']
