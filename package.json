@@ -9,7 +9,7 @@
   "scripts": {
     "start": "hugo --gc"
   },
-  "devDependencies": {
+  "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.3.0",
     "autoprefixer": "^9.7.3",
     "postcss": "^7.0.23",
